@@ -4,7 +4,7 @@ import React from 'react';
 const App = () => {
   return (
     <SafeAreaView>
-      <Text>Test with Jest</Text>
+      <Text>Test With Jest</Text>
     </SafeAreaView>
   );
 };
