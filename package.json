@@ -11,6 +11,7 @@
     "ahmet": "npm install && cd ios && pod install && cd .. && react-native run-ios --simulator='iphone 14'"
   },
   "dependencies": {
+    "@testing-library/react-native": "^11.5.0",
     "react": "18.2.0",
     "react-native": "0.71.0"
   },
