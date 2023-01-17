@@ -28,8 +28,12 @@ test('should be trigged onPress', () => {
   expect(mockFunction).toBeCalledTimes(1); //kontrolünü yaptığımız yer
 });
 
-test('should render given theme style', () => {
-  const comp = render(<Button />);
-  const buttonContainer = comp.getByTestId('button-touchable');
+test('should render given or default theme style', () => {
+  const selectedTheme = 'primary';
+  const comp = render(<Button theme={selectedTheme} />);
+  const buttonContainer = comp.getByTestId('button-touchable').props.style;
+  expect(buttonContainer).toMatchObject(styles[selectedTheme].container);
+  //verilen theme başarılı bir şekilde buttonun içerisine verilmiş
+
   console.log(buttonContainer);
 });
