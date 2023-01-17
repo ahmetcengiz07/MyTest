@@ -44,8 +44,6 @@ exports[`should match with snapshot 1`] = `
 >
   <Text
     testID="button-title"
-  >
-    Testing Style
-  </Text>
+  />
 </View>
 `;

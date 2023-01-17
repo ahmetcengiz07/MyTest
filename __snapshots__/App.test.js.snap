@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match will snapshot 1`] = `
+<RCTSafeAreaView
+  style={
+    {
+      "flex": 1,
+    }
+  }
+>
+  <Text>
+    Test with Jest
+  </Text>
+  <RCTScrollView
+    data={[]}
+    getItem={[Function]}
+    getItemCount={[Function]}
+    keyExtractor={[Function]}
+    onContentSizeChange={[Function]}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={[]}
+    testID="list"
+    viewabilityConfigCallbackPairs={[]}
+  >
+    <View />
+  </RCTScrollView>
+  <TextInput
+    onChangeText={[Function]}
+    placeholder="Add "
+    style={
+      {
+        "backgroundColor": "lightgray",
+        "borderColor": "black",
+        "borderRadius": 20,
+        "borderWidth": 1,
+        "margin": 10,
+        "marginHorizontal": 20,
+        "padding": 12,
+      }
+    }
+    testID="Input-Area"
+  />
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "lightblue",
+        "borderRadius": 50,
+        "justifyContent": "center",
+        "margin": 20,
+        "opacity": 1,
+        "padding": 20,
+      }
+    }
+    testID="button-touchable"
+  >
+    <Text
+      testID="button-title"
+    >
+      Add List
+    </Text>
+  </View>
+</RCTSafeAreaView>
+`;

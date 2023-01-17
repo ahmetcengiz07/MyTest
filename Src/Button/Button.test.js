@@ -34,6 +34,4 @@ test('should render given or default theme style', () => {
   const buttonContainer = comp.getByTestId('button-touchable').props.style;
   expect(buttonContainer).toMatchObject(styles[selectedTheme].container);
   //verilen theme başarılı bir şekilde buttonun içerisine verilmiş
-
-  console.log(buttonContainer);
 });
