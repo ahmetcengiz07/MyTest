@@ -10,7 +10,7 @@ const Button = ({title, onPress, theme = 'primary'}) => {
       onPress={onPress}
       style={styles[theme].container}>
       <Text testID="button-title" style={styles[theme].title}>
-        Testing Style
+        {title}
       </Text>
     </TouchableOpacity>
   );
