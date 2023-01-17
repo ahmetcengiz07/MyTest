@@ -29,6 +29,10 @@ const App = () => {
     );
   };
   const HandleClick = () => {
+    if (!text) {
+      return;
+    }
+
     setList([...list, text]);
   };
 

@@ -22,3 +22,14 @@ test('should add item to list', () => {
 
   //submitButtonu 1 kez fireEvent ile çağırdığımız için datada 1 eleman mı oluşuyor diye kontrol ediyoruz
 });
+
+test('should not add item if input is empty', () => {
+  const comp = render(<App />);
+
+  const submitButton = comp.getByTestId('button-touchable');
+  fireEvent.press(submitButton);
+  const list = comp.getByTestId('list').props;
+  expect(list.data.length).toBe(0);
+
+  //submitButtonu 1 kez fireEvent ile çağırdığımız için datada 1 eleman mı oluşuyor diye kontrol ediyoruz
+});
