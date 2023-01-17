@@ -33,3 +33,6 @@ test('should not add item if input is empty', () => {
 
   //submitButtonu 1 kez fireEvent ile çağırdığımız için datada 1 eleman mı oluşuyor diye kontrol ediyoruz
 });
+
+//COVERAGE Bir komponenti yüzde kaç oranında test edebildiğinizi gösterir
+// yarn test --coverage
