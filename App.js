@@ -11,8 +11,8 @@ import {
 import Button from './Src/Button';
 
 const App = () => {
-  const [list, setList] = React.useState([]);
-  const [text, setText] = React.useState('');
+  const [list, setList] = useState([]);
+  const [text, setText] = useState('');
 
   const renderList = ({item}) => {
     return (
