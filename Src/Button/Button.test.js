@@ -1,11 +1,29 @@
 import React from 'react';
-import {render, fireEvent} from '@testing-library/react-native';
+import {render, fireEvent, cleanup} from '@testing-library/react-native';
 import Button from './Button';
 import {styles} from './ButtonStyle';
 
+beforeAll(() => {
+  console.log('Bir kere çalış arkasından diğer testler çalışssın ');
+});
+
+beforeEach(() => {
+  console.log('Her testten önce bir kez çalış');
+});
+
+afterEach(() => {
+  console.log('Her testten sonra bir kez çalış');
+});
+
+afterAll(() => {
+  console.log('Tüm testlerden sonra bir kez çalış');
+});
+//cleanup() fonksiyonu kullanama gerek yok çünkü afterAll içerisinde mevcut
+
 test('should match with snapshot', () => {
   const comp = render(<Button />);
-  expect(comp).toMatchSnapshot(); //Cevap almak istenilen nesneyi parametre olarak alır.Burada toMatchSnapshot koşulunu sağlayan nesne comp mudur ?
+  expect(comp).toMatchSnapshot(); 
+  //Cevap almak istenilen nesneyi parametre olarak alır.Burada toMatchSnapshot koşulunu sağlayan nesne comp mudur ?
 });
 
 test('Check Number', () => {

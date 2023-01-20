@@ -38,7 +38,9 @@ const App = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <Text>Test with Jest</Text>
+      <Text style={{alignSelf: 'center', fontSize: 12, fontWeight: '500'}}>
+        Jest should be tested in the Rect Native App
+      </Text>
       <FlatList
         testID="list"
         data={list}
